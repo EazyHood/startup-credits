@@ -1,0 +1,58 @@
+schema_version: sourcey.vendor-authoring/v1alpha1
+entity_id: ent_01kzbptp8axz3gbkfkfwyh6x8t
+slug: dub
+slug_aliases: []
+name: Dub
+domains:
+  - value: dub.co
+    role: primary
+    valid_from: 2026-08-06T14:14:55.000Z
+category: marketing
+description: Dub is a partner program platform where companies launch a partner program and reward the people helping them grow.
+links:
+  site: https://dub.co
+sources:
+  - source_id: src_59628b3d16b03ecb16b1ed0ba6502c0a496989427187e7ca93569011460dd4f8
+    url: https://dub.co/startups
+programs:
+  - program_id: prg_01kzbptp8d8m6x9h864tfrd6xd
+    program_slug: dub-startups
+    program_slug_aliases: []
+    title: Dub Startups
+    source_ids:
+      - src_59628b3d16b03ecb16b1ed0ba6502c0a496989427187e7ca93569011460dd4f8
+offers:
+  - offer_id: off_01kzbptp8d1fc6nmts1sjg1gjb
+    program_id: prg_01kzbptp8d8m6x9h864tfrd6xd
+    offer_slug: advanced-for-startups
+    offer_slug_aliases: []
+    title: Advanced for Startups
+    summary: Startups founded less than five years ago with fewer than 15 employees receive a 50% discount on Advanced for Startups in year one and a 25% discount in year two.
+    lifecycle:
+      status: active
+      effective_from: 2026-08-06T14:14:55.000Z
+    economics:
+      consideration:
+        kind: none
+      benefits:
+        - benefit_id: ben_primary
+          description: 50% discount in year one and 25% discount in year two
+          kind: discount
+          percentage:
+            kind: exact
+            basis_points: 5000
+    eligibility:
+      rule:
+        kind: manual
+        criterion_id: cri_requirement_01
+        statement: Founded less than 5 years ago. Fewer than 15 employees. A team member to own the program. Not currently a Dub customer.
+        reason: not-machine-evaluable
+    roles:
+      terms_authority_entity_id: ent_01kzbptp8axz3gbkfkfwyh6x8t
+      access_operator_entity_id: ent_01kzbptp8axz3gbkfkfwyh6x8t
+    access:
+      availability: public
+      method: form
+      url: https://dub.co/startups
+    source_ids:
+      - src_59628b3d16b03ecb16b1ed0ba6502c0a496989427187e7ca93569011460dd4f8
